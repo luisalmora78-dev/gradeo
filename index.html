@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PokéGrade Perú</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="site-header" id="inicio">
+    <div class="container header-inner">
+      <div class="brand">
+        PokéGrade Perú
+      </div>
+
+      <nav class="main-nav">
+        <a href="#inicio">Inicio</a>
+        <a href="#catalogo">Catálogo ETB</a>
+        <a href="#gradeo">Gradeo</a>
+        <a href="#mision-vision">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <div class="cart-area">
+        <label for="toggle-checkout" class="cart-button" aria-label="Ver carrito y pasarela de pago">
+          <span class="cart-icon">🛒</span>
+          <span class="cart-text">Carrito</span>
+          <span class="cart-badge" id="cart-count" data-count="0">0</span>
+        </label>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1 id="hero-title">Gradeo y compra de cartas Pokémon en Perú</h1>
+          <p class="hero-subtitle">
+            Gradea tus cartas, compra ETBs y gestiona tus ventas de forma segura desde Lima, Perú.
+          </p>
+          <div class="hero-actions">
+            <a href="#catalogo" class="btn primary">Ver catálogo de ETBs</a>
+            <a href="#gradeo" class="btn secondary">Gradea tu carta</a>
+          </div>
+        </div>
+
+        <div class="hero-card-placeholder">
+          <div class="card-frame">
+            <img src="img/XY12_ES_11.png" alt="Carta Pokémon destacada" class="card-image">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="catalogo" class="section">
+      <div class="container">
+        <header class="section-header">
+          <h2>Catálogo de Elite Trainer Boxes (ETBs)</h2>
+          <p>Explora las ETBs disponibles. Puedes cambiar los textos, códigos y precios según tu inventario.</p>
+        </header>
+
+        <div class="catalog-filters">
+          <input type="text" placeholder="Buscar por nombre o código de ETB">
+          <select>
+            <option value="">Filtrar por expansión</option>
+            <option>Scarlet & Violet</option>
+            <option>Sword & Shield</option>
+            <option>Sol & Luna</option>
+            <option>Otros</option>
+          </select>
+          <select>
+            <option value="">Disponibilidad</option>
+            <option>En stock</option>
+            <option>Próximamente</option>
+          </select>
+          <button class="btn filter-btn" type="button">Aplicar filtros</button>
+        </div>
+
+        <div class="product-grid">
+
+          <article class="product-card">
+            <div class="product-image-placeholder">
+              <img src="img/Pokemon_TCG_Champion_s_Path_Elite_Trainer_Box_ProductShot-1.webp" alt="ETB Champion's Path" class="product-image">
+            </div>
+            <div class="product-body">
+              <h3>ETB Champion's Path</h3>
+              <p class="product-code">Código: ETB-001</p>
+              <p class="product-price">S/ 249.90</p>
+            </div>
+            <div class="product-actions">
+              <button class="btn small">Ver detalles</button>
+              <button
+                class="btn small secondary add-to-cart"
+                data-name="ETB Champion's Path"
+                data-price="249.90"
+              >
+                Agregar al carrito
+              </button>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image-placeholder">
+              <img src="img/710FmIk40ML.jpg" alt="ETB Shining Fates" class="product-image">
+            </div>
+            <div class="product-body">
+              <h3>ETB Shining Fates</h3>
+              <p class="product-code">Código: ETB-002</p>
+              <p class="product-price">S/ 259.90</p>
+            </div>
+            <div class="product-actions">
+              <button class="btn small">Ver detalles</button>
+              <button
+                class="btn small secondary add-to-cart"
+                data-name="ETB Shining Fates"
+                data-price="259.90"
+              >
+                Agregar al carrito
+              </button>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image-placeholder">
+              <img src="img/P7677_290-80986_01.jpg" alt="ETB Celebrations" class="product-image">
+            </div>
+            <div class="product-body">
+              <h3>ETB Celebrations</h3>
+              <p class="product-code">Código: ETB-003</p>
+              <p class="product-price">S/ 279.90</p>
+            </div>
+            <div class="product-actions">
+              <button class="btn small">Ver detalles</button>
+              <button
+                class="btn small secondary add-to-cart"
+                data-name="ETB Celebrations"
+                data-price="279.90"
+              >
+                Agregar al carrito
+              </button>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image-placeholder">
+              <img src="img/2014.jpg" alt="ETB Obsidian Flames" class="product-image">
+            </div>
+            <div class="product-body">
+              <h3>ETB Obsidian Flames</h3>
+              <p class="product-code">Código: ETB-004</p>
+              <p class="product-price">S/ 299.90</p>
+            </div>
+            <div class="product-actions">
+              <button class="btn small">Ver detalles</button>
+              <button
+                class="btn small secondary add-to-cart"
+                data-name="ETB Obsidian Flames"
+                data-price="299.90"
+              >
+                Agregar al carrito
+              </button>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image-placeholder">
+              <img src="img/s-l1200.jpg" alt="ETB Paldea Evolved" class="product-image">
+            </div>
+            <div class="product-body">
+              <h3>ETB Paldea Evolved</h3>
+              <p class="product-code">Código: ETB-005</p>
+              <p class="product-price">S/ 319.90</p>
+            </div>
+            <div class="product-actions">
+              <button class="btn small">Ver detalles</button>
+              <button
+                class="btn small secondary add-to-cart"
+                data-name="ETB Paldea Evolved"
+                data-price="319.90"
+              >
+                Agregar al carrito
+              </button>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image-placeholder">
+              <img src="img/D_NQ_NP_644069-MPE54945790311_042023-O.webp" alt="ETB Scarlet & Violet" class="product-image">
+            </div>
+            <div class="product-body">
+              <h3>ETB Scarlet & Violet</h3>
+              <p class="product-code">Código: ETB-006</p>
+              <p class="product-price">S/ 349.90</p>
+            </div>
+            <div class="product-actions">
+              <button class="btn small">Ver detalles</button>
+              <button
+                class="btn small secondary add-to-cart"
+                data-name="ETB Scarlet & Violet"
+                data-price="349.90"
+              >
+                Agregar al carrito
+              </button>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image-placeholder">
+              <img src="img/P8835_290-85187_01.jpg" alt="ETB Crown Zenith" class="product-image">
+            </div>
+            <div class="product-body">
+              <h3>ETB Crown Zenith</h3>
+              <p class="product-code">Código: ETB-007</p>
+              <p class="product-price">S/ 369.90</p>
+            </div>
+            <div class="product-actions">
+              <button class="btn small">Ver detalles</button>
+              <button
+                class="btn small secondary add-to-cart"
+                data-name="ETB Crown Zenith"
+                data-price="369.90"
+              >
+                Agregar al carrito
+              </button>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image-placeholder">
+              <img src="img/Pokemon-TCG-Prismatic-Evolution-Elite-Trainer-Box-Ingles-1-1.jpg" alt="ETB Prismatic Evolution" class="product-image">
+            </div>
+            <div class="product-body">
+              <h3>ETB Prismatic Evolution</h3>
+              <p class="product-code">Código: ETB-008</p>
+              <p class="product-price">S/ 399.90</p>
+            </div>
+            <div class="product-actions">
+              <button class="btn small">Ver detalles</button>
+              <button
+                class="btn small secondary add-to-cart"
+                data-name="ETB Prismatic Evolution"
+                data-price="399.90"
+              >
+                Agregar al carrito
+              </button>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="gradeo" class="section section-alt">
+      <div class="container gradeo-layout">
+        <div class="gradeo-info">
+          <h2>Gradeo de cartas Pokémon</h2>
+          <p>
+            Completa el formulario para registrar una carta a gradear. 
+          </p>
+        </div>
+
+        <form class="gradeo-form">
+          <div class="form-row">
+            <div class="form-field">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
+            </div>
+            <div class="form-field">
+              <label for="apellidos">Apellidos</label>
+              <input type="text" id="apellidos" name="apellidos" placeholder="Tus apellidos">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="correo">Correo electrónico</label>
+              <input type="email" id="correo" name="correo" placeholder="tucorreo@ejemplo.com">
+            </div>
+            <div class="form-field">
+              <label for="telefono">Teléfono</label>
+              <input type="tel" id="telefono" name="telefono" placeholder="+51 999 999 999">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="expansion">Expansión</label>
+              <select id="expansion" name="expansion">
+                <option value="">Selecciona una expansión</option>
+                <option>Scarlet & Violet</option>
+                <option>Sword & Shield</option>
+                <option>Sol & Luna</option>
+                <option>Otra</option>
+              </select>
+            </div>
+
+            <div class="form-field">
+              <label for="codigo-carta">Código / Nombre de la carta</label>
+              <input type="text" id="codigo-carta" name="codigo-carta" placeholder="Ej: SVP-001 Pikachu Promo">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="tipo-carta">Tipo de carta</label>
+              <select id="tipo-carta" name="tipo-carta">
+                <option value="">Selecciona tipo</option>
+                <option>Holo</option>
+                <option>Full Art</option>
+                <option>Secret Rare</option>
+                <option>Promo</option>
+                <option>Otro</option>
+              </select>
+            </div>
+
+            <div class="form-field">
+              <label for="condicion-estimada">Condición estimada</label>
+              <select id="condicion-estimada" name="condicion-estimada">
+                <option value="">Selecciona una opción</option>
+                <option>Near Mint</option>
+                <option>Lightly Played</option>
+                <option>Moderately Played</option>
+                <option>Heavily Played</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="foto-carta">Foto de la carta</label>
+              <input type="file" id="foto-carta" name="foto-carta">
+            </div>
+            <div class="form-field">
+              <label for="fecha-recojo">Fecha de recojo</label>
+              <input type="date" id="fecha-recojo" name="fecha-recojo">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="fecha-entrega">Fecha estimada de entrega</label>
+              <input type="date" id="fecha-entrega" name="fecha-entrega">
+            </div>
+            <div class="form-field">
+              <label for="horario">Horario de recojo (referencial)</label>
+              <input type="text" id="horario" name="horario" placeholder="Ej: 3:00 pm - 6:00 pm">
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="comentarios">Comentarios adicionales</label>
+            <textarea id="comentarios" name="comentarios" rows="3" placeholder="Detalles extra sobre la carta o envío"></textarea>
+          </div>
+
+          <div class="form-row form-row-center">
+            <label class="checkbox-label">
+              <input type="checkbox" name="terminos">
+              <span>Acepto los términos y condiciones del servicio de gradeo.</span>
+            </label>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn primary">Enviar solicitud de gradeo</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section id="mision-vision" class="section">
+      <div class="container">
+        <header class="section-header">
+          <h2>Nosotros</h2>
+        </header>
+
+        <div class="mv-grid">
+          <article class="mv-card">
+            <h3>Misión</h3>
+            <p>
+              Nuestra misión es ofrecer a los coleccionistas peruanos una experiencia clara y segura para el gradeo
+              y la compra de productos Pokémon TCG. Buscamos que cualquier persona, sin importar su nivel de experiencia,
+              pueda organizar, proteger y valorar su colección con información transparente y un servicio cercano.
+            </p>
+          </article>
+
+          <article class="mv-card">
+            <h3>Visión</h3>
+            <p>
+              Aspiramos a convertirnos en una referencia local para la comunidad de coleccionistas, impulsando espacios
+              de intercambio, aprendizaje y confianza. Queremos que PokéGrade Perú sea el punto de encuentro donde
+              jugadores y coleccionistas encuentren herramientas, productos y acompañamiento para disfrutar al máximo
+              su hobby.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="section">
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <h2>Contacto</h2>
+          <p>
+            Escríbenos para consultas sobre compras, gradeo de cartas o ventas.
+          </p>
+
+          <ul class="contact-list">
+            <li>
+              <strong>Correo:</strong>
+              <a href="mailto:contacto@pokegradeperu.com">contacto@pokegradeperu.com</a>
+            </li>
+            <li>
+              <strong>Teléfono:</strong>
+              +51 999 999 999
+            </li>
+            <li>
+              <strong>Ubicación:</strong>
+              Lima, Perú
+            </li>
+          </ul>
+
+          <div class="social-links">
+            <span>Síguenos:</span>
+            <a href="#" class="social-icon" aria-label="Instagram">IG</a>
+            <a href="#" class="social-icon" aria-label="Facebook">FB</a>
+            <a href="#" class="social-icon" aria-label="TikTok">TT</a>
+          </div>
+        </div>
+
+        <form class="contact-form">
+          <div class="form-field">
+            <label for="nombre-contacto">Nombre</label>
+            <input type="text" id="nombre-contacto" name="nombre-contacto" placeholder="Tu nombre">
+          </div>
+
+          <div class="form-field">
+            <label for="correo-contacto">Correo</label>
+            <input type="email" id="correo-contacto" name="correo-contacto" placeholder="tucorreo@ejemplo.com">
+          </div>
+
+          <div class="form-field">
+            <label for="mensaje-contacto">Mensaje</label>
+            <textarea id="mensaje-contacto" name="mensaje-contacto" rows="4" placeholder="Cuéntanos en qué podemos ayudarte"></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn primary">Enviar mensaje</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="container map-wrapper">
+        <div class="map-placeholder">
+          <iframe
+            src="https://www.google.com/maps?q=Lima,+Peru&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2025 PokéGrade Perú. <p>
+    </div>
+  </footer>
+
+  <input type="checkbox" id="toggle-checkout" class="modal-toggle">
+
+  <div class="checkout-modal-overlay">
+    <div class="checkout-modal">
+      <div class="checkout-modal-header">
+        <h2>Pasarela de pagos (maqueta)</h2>
+        <label for="toggle-checkout" class="checkout-close" aria-label="Cerrar pasarela de pagos">×</label>
+      </div>
+
+      <div class="pagos-grid checkout-grid">
+        <div class="resumen-compra">
+          <h3>Resumen de compra</h3>
+
+          <ul id="cart-items" class="cart-items">
+            <li class="empty-cart">Tu carrito está vacío.</li>
+          </ul>
+
+          <div class="cart-total">
+            <span>Total</span>
+            <span id="cart-total-amount">S/ 0.00</span>
+          </div>
+        </div>
+
+        <div class="metodos-pago">
+          <h3>Elige tu método de pago</h3>
+
+          <form class="payment-form">
+            <div class="payment-methods">
+              <label class="payment-option">
+                <input type="radio" name="metodo" value="yape">
+                <span>Yape</span>
+              </label>
+
+              <label class="payment-option">
+                <input type="radio" name="metodo" value="plin">
+                <span>Pago Efectivo</span>
+              </label>
+
+              <label class="payment-option">
+                <input type="radio" name="metodo" value="tarjeta">
+                <span>Tarjeta de crédito / débito</span>
+              </label>
+
+            </div>
+
+            <div class="form-field">
+              <label for="nombre-pago">Nombre completo</label>
+              <input type="text" id="nombre-pago" name="nombre-pago" placeholder="Tu nombre">
+            </div>
+
+            <div class="form-field">
+              <label for="correo-pago">Correo para confirmación</label>
+              <input type="email" id="correo-pago" name="correo-pago" placeholder="tucorreo@ejemplo.com">
+            </div>
+
+            <button type="submit" class="btn primary full-width">
+              Simular pago
+            </button>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <a href="https://wa.me/51999999999" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Abrir chat de WhatsApp">
+    <span class="wa-icon">WA</span>
+  </a>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
